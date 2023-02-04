@@ -11,6 +11,7 @@ export const House = (props) => {
         };
         updateHouse(updatedHouse);
     }
+//error saying "addNewRoom is not a function"
 
     const addNewRoom = (room) => updateHouse({ ...house, rooms: [...house.rooms, room]});
 

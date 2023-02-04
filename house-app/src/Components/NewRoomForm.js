@@ -12,6 +12,9 @@ export const NewRoomForm = (props) => {
     const onSubmit = (e) => {
         e.preventDefault();
         if (name && area) {
+            
+            //addNewRoom does not work
+            
             props.addNewRoom({name, area});
             setName('');
             setArea('');
