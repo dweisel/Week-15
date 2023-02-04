@@ -1,6 +1,7 @@
 const HOUSES_ENDPOINT = 'https://ancient-taiga-31359.herokuapp.com/api/houses';
 
 class HousesApi {
+    //read
     get = async () => {
     try {
         const resp = await fetch(HOUSES_ENDPOINT);
@@ -11,6 +12,7 @@ class HousesApi {
     }  
     }
     
+    //update
     put = async (house) => {
         try {
             const resp = await fetch(`${HOUSES_ENDPOINT}/${house._id}`, {

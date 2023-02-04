@@ -7,7 +7,7 @@ const HOUSES_ENDPOINT = 'https://ancient-taiga-31359.herokuapp.com/api/houses';
 export const House = (props) => {
     const { house, updateHouse } = props;
 
-//*CAN'T GET THE POST TO WORK */
+//*CAN'T GET THE POST (CREATE) TO WORK */
 
     //      post = async () => {
     //     const res = await fetch(`${HOUSES_ENDPOINT}`, {
@@ -18,6 +18,7 @@ export const House = (props) => {
     //     })
     // })};
 
+    //Delete
     const deleteRoom = (roomId) => {
         const updatedHouse = {
             ...house,
