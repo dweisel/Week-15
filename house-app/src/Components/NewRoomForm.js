@@ -26,6 +26,12 @@ export const NewRoomForm = (props) => {
             <form onSubmit={onSubmit}>
                 <input 
                 type='text'
+                placeholder='room'
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+                />
+                <input
+                type='text'
                 placeholder='area'
                 onChange={handleAreaInput}
                 value={area}
