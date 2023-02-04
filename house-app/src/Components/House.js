@@ -1,8 +1,22 @@
 import React from "react";
 import { NewRoomForm } from './NewRoomForm';
 
+const HOUSES_ENDPOINT = 'https://ancient-taiga-31359.herokuapp.com/api/houses';
+
+
 export const House = (props) => {
     const { house, updateHouse } = props;
+
+//*CAN'T GET THE POST TO WORK */
+
+    //      post = async () => {
+    //     const res = await fetch(`${HOUSES_ENDPOINT}`, {
+    //         method: 'POST',
+    //         headers: {'Content-Type': 'application/json'},
+    //         body: JSON.stringify({
+    //             name: 'Test House'
+    //     })
+    // })};
 
     const deleteRoom = (roomId) => {
         const updatedHouse = {

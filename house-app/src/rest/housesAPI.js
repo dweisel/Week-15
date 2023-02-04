@@ -28,4 +28,5 @@ class HousesApi {
         
     }
 
+
     export const housesApi = new HousesApi();
